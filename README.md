@@ -1,15 +1,15 @@
 # Browser Monads
 
- Makes it possible to use the `window` and `document` variables ouside the browser.  
- 
- In case these variables do not exist, they will be instantiated as instances of `nothing`. Build to use with [Gatsby]() so you can `gatsby build` without issues, but can be used however you want. For more information about the `nothing`-type, please check [this repo]().
- 
-```
-$ npm install --save browser-monads
-```
+ Will provide an interface for the default `window` and `document` variables. They will be `nothing` when they are unavailable (which has the same api as the real variables). For more information about the `nothing`-type, check out the [documentation](https://github.com).  
+
+[This is also very useful with Gatsby.](https://medium.com)
+
+### Usage
 
 ```js
 import { window, document } from 'browser-monads';
 
-const path = window.location.href;
+// Result outside browser: 'Location: '
+// Result inside browser: 'Location: {href}'
+console.log(`Location: ${window.location.href}`);
 ```
