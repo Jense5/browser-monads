@@ -1,15 +1,17 @@
 # Browser Monads
 
- Will provide an interface for the default `window` and `document` variables. They will be `nothing` when they are unavailable (which has the same api as the real variables). For more information about the `nothing`-type, check out the [documentation](https://github.com).  
+Interface for the default `window` and `document` variables (which are `nothing` when unavailable).  
 
-[This is also very useful with Gatsby.](https://medium.com)
-
-### Usage
+Using it with [Gatsby](https://www.gatsbyjs.org) makes it possible to build your website and use `window` and `document` without checks. More info about the `nothing`-type can be found [here](https://github.com/slmgc/Nothing).  
 
 ```js
-import { window, document } from 'browser-monads';
+import { window, document, exists } from 'browser-monads';
 
-// Result outside browser: 'Location: '
-// Result inside browser: 'Location: {href}'
+// Outside browser: 'Location: '
+// Inside browser: 'Location: {href}'
 console.log(`Location: ${window.location.href}`);
+
+// Inside browser: true.
+// Outside browser: false.
+exists(document);
 ```
