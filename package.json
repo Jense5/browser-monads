@@ -1,0 +1,11 @@
+{
+  "name": "browser-monads",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5",
+    "nothing-mock": "^1.0.0"
+  }
+}
