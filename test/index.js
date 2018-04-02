@@ -1,6 +1,6 @@
 const { expect } = require('chai');
 const { isNothing } = require('nothing-mock');
-const { window, document, exists } = require('../src/index.js');
+const { window, document, exists } = require('../lib/index.js');
 
 describe('General Tests', function() {
   it('window should be nothing outside browser', () => {
