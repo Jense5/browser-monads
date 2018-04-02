@@ -1,6 +1,7 @@
 # Browser Monads
 
-Interface for the `window` and `document` variables of a webpage (which are `nothing` when unavailable).  
+Interface for the `window` and `document` variables of a webpage.
+These values will be `nothing` when unavailable.  
 Makes it possible to use these variables without checks with [Gatsby](https://www.gatsbyjs.org).  
 More info about the `nothing`-type can be found [here](https://github.com/slmgc/Nothing).  
 
