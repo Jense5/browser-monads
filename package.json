@@ -3,6 +3,12 @@
   "version": "0.1.1",
   "main": "lib/index.js",
   "license": "MIT",
+  "keywords": [
+    "browser",
+    "monads",
+    "window",
+    "document"
+  ],
   "scripts": {
     "test": "mocha",
     "build": "babel src -d lib",
