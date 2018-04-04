@@ -12,6 +12,8 @@ This same concept is applicable to the `document` variable too. You can use the 
 
 This library makes it possible to use these variables without checks with [Gatsby](https://www.gatsbyjs.org). This way of programming splits the defensive part from your own code, since you don't have to care anymore about the environment in which you are running. This makes it especially useful with server-side rendering. More info about the `nothing`-type can be found [here](https://github.com/slmgc/Nothing).  
 
+## Show me the code!
+
 ```js
 import { window, document, exists } from 'browser-monads';
 
